@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig1</title>
+</head>
+<body>
+<h1><strong>Bestilling av kinobilletter</strong></h1>
+
+<div>
+    Velg film:
+    <select id="film">
+        <option disabled selected value="">Velg film her</option>
+        <option value="Oppenheimer">Oppenheimer</option>
+        <option value="Barbie">Barbie</option>
+        <option value="Mean Girls">Mean girls</option>
+    </select>
+    <p style="display: none; color:red" id="valideringFilm">Må velge en film</p>
+</div>
+<div>
+    Antall:
+    <input type="number" id="antall"/>
+    <p style="display: none; color:red" id="valideringAntall">Må velge gyldig antall</p>
+</div>
+<div>
+    Fornavn:
+    <input type="text" id="fnavn"/>
+    <p style="display: none; color:red" id="valideringFornavn">Må skrive inn fornavn</p>
+</div>
+<div>
+    Etternavn:
+    <input type="text" id="enavn"/>
+    <p style="display: none; color:red" id="valideringEtternavn">Må skrive inn etternavn</p>
+</div>
+<div>
+    Telefonnr:
+    <input type="tel" id="tlf"/>
+    <p style="display: none; color:red" id="valideringTlfnr"></p>
+</div>
+<div>
+    Epost:
+    <input type="email" id="epost"/>
+    <p style="display: none; color:red" id="valideringEpost"></p>
+</div>
+
+<button onclick="kjøp()">Kjøp billett</button>
+
+<h2><strong>Alle billetter</strong></h2>
+
+<table id="alleBilletter">
+    <tr>
+        <td>Film</td>
+        <td>Antall</td>
+        <td>Fornavn</td>
+        <td>Etternavn</td>
+        <td>Telefonnr</td>
+        <td>Epost</td>
+    </tr>
+</table>
+
+
+
+<button onclick="slette()">Slett alle billettene</button>
+
+
+<script src="hello.js"></script>
+
+</body>
+</html>
